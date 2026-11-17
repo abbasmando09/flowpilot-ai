@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowPilot AI | Smart Lead Automation</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">
+    <span class="logo-icon">↗</span>
+    <span class="logo-text">
+        FlowPilot<span>AI</span>
+        <small>Capture • Analyze • Grow</small>
+    </span>
+        </a>
+
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="nav-button">Get Started</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tagline">SMARTER BUSINESS AUTOMATION</p>
+
+                <h1>
+                    Turn Every Lead Into
+                    <span>An Opportunity.</span>
+                </h1>
+
+                <p class="hero-description">
+                    FlowPilot AI helps real estate agencies
+                    capture, organise and manage customer
+                    enquiries with intelligent automation.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#features" class="primary-button">
+                        Explore Features
+                    </a>
+
+                    <a href="#how-it-works" class="secondary-button">
+                        How It Works
+                    </a>
+                </div>
+
+                <p class="trust-text">
+                    Less manual work. Faster responses. Better organisation.
+                </p>
+            </div>
+
+            <div class="hero-card">
+                <div class="card-header">
+                    <span>Lead Overview</span>
+                    <span class="status">● Live Demo</span>
+                </div>
+
+                <div class="stat">
+                    <p>Total Enquiries</p>
+                    <h2 id="totalEnquiries">0</h2>
+                </div>
+
+                <div class="stat">
+                    <p>New Leads</p>
+                    <h2 id="newLeads">0</h2>
+                </div>
+<div class="stat">
+    <p>Hot Leads</p>
+    <h2 id="hotLeads">0</h2>
+</div>
+
+<div class="stat">
+    <p>Warm Leads</p>
+    <h2 id="warmLeads">0</h2>
+</div>
+
+<div class="stat">
+    <p>Cold Leads</p>
+    <h2 id="coldLeads">0</h2>
+</div>
+                <div class="lead-item">
+                    <div>
+                        <strong>Property Enquiry</strong>
+                        <p>Interested in buying</p>
+                    </div>
+                    <span class="lead-label">New</span>
+                </div>
+
+                <div class="lead-item">
+                    <div>
+                        <strong>Rental Enquiry</strong>
+                        <p>Looking for an apartment</p>
+                    </div>
+                    <span class="lead-label">Processed</span>
+                </div>
+            </div>
+        </section>
+      
+<!-- PROPERTY SEARCH SECTION -->
+<section class="property-search" id="property-search">
+
+    <h2>Find Your Perfect Property</h2>
+    <p>Search properties by location, type and purpose.</p>
+
+    <div class="search-form">
+
+        <input type="text" id="searchLocation"
+        placeholder="Enter location">
+
+        <select id="searchType">
+            <option value="">All Property Types</option>
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+        </select>
+
+        <select id="searchPurpose">
+            <option value="">Buy or Rent</option>
+            <option value="sale">For Sale</option>
+            <option value="rent">For Rent</option>
+        </select>
+
+        <button type="button" id="propertySearchButton">
+            Search Properties
+        </button>
+
+    </div>
+</section>
+
+      
+<!-- FEATURED PROPERTIES SECTION -->
+<section class="properties" id="properties">
+
+    <div class="section-heading">
+        <p class="tagline">EXPLORE OUR PROPERTIES</p>
+        <h2>Featured Properties</h2>
+        <p>Discover properties that match your lifestyle and budget.</p>
+    </div>
+
+    <div class="property-grid">
+
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Modern luxury house">
+            <div class="property-info">
+                <span class="property-type">FOR SALE</span>
+                <h3>Modern Luxury House</h3>
+
+<button type="button" class="view-details-button"
+    onclick="showPropertyDetails(0)">
+    View Details
+</button>
+
+<p class="property-location">Islamabad, Pakistan</p>
+
+<h4>$250,000</h4>
+
+<p>4 Bedrooms • 3 Bathrooms</p>
+
+<a href="#enquiry" class="property-button">Enquire Now</a>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800" alt="Modern apartment">
+            <div class="property-info">
+                <span class="property-type">FOR RENT</span>
+                <h3>Luxury City Apartment</h3>
+              
+<button type="button" class="view-details-button"
+    onclick="showPropertyDetails(1)">
+    View Details
+</button>
+
+                <p class="property-location">Dubai, UAE</p>
+                <h4>$2,000 / month</h4>
+                <p>2 Bedrooms • 2 Bathrooms</p>
+                <a href="#enquiry" class="property-button">Enquire Now</a>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800" alt="Contemporary family home">
+            <div class="property-info">
+                <span class="property-type">FOR SALE</span>
+                <h3>Contemporary Family Home</h3>
+              
+<button type="button" class="view-details-button"
+    onclick="showPropertyDetails(2)">
+    View Details
+</button>
+
+                <p class="property-location">London, UK</p>
+                <h4>$450,000</h4>
+                <p>5 Bedrooms • 4 Bathrooms</p>
+                <a href="#enquiry" class="property-button">Enquire Now</a>
+            </div>
+        </div>
+
+    </div>
+  
+<button type="button" id="showAllProperties" class="show-all-button">
+    Show All Properties
+</button>
+
+</section>
+
+
+        <section class="features" id="features">
+            <div class="section-heading">
+                <p class="tagline">WHAT WE OFFER</p>
+                <h2>Everything Your Leads Need</h2>
+                <p>Manage customer enquiries with less effort.</p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-box">
+                    <div class="feature-icon">📩</div>
+                    <h3>Lead Capture</h3>
+                    <p>Collect customer enquiries through
+                    simple online forms.</p>
+                </article>
+
+                <article class="feature-box">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Processing</h3>
+                    <p>Automatically summarise and
+                    categorise customer enquiries.</p>
+                </article>
+
+                <article class="feature-box">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Smart Notifications</h3>
+                    <p>Notify your team when a new
+                    customer enquiry arrives.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="how-it-works">
+            <p class="tagline">SIMPLE PROCESS</p>
+            <h2>How FlowPilot AI Works</h2>
+
+            <div class="steps">
+                <div class="step">
+                    <span>01</span>
+                    <h3>Capture</h3>
+                    <p>A customer submits an enquiry.</p>
+                </div>
+
+                <div class="step">
+                    <span>02</span>
+                    <h3>Process</h3>
+                    <p>The system organises the information.</p>
+                </div>
+
+                <div class="step">
+                    <span>03</span>
+                    <h3>Respond</h3>
+                    <p>The business receives a notification.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+          
+<!-- CUSTOMER ENQUIRY FORM -->
+
+    
+
+
+<section class="enquiry-section" id="enquiry">
+
+    <div class="section-heading">
+        <p class="tagline">GET IN TOUCH</p>
+        <h2>Submit Your Property Enquiry</h2>
+        <p>Tell us what property you are looking for.</p>
+    </div>
+
+    <form id="enquiryForm" class="enquiry-form">
+
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName"
+                placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email"
+                placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone"
+                placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="propertyType">Property Type</label>
+            <select id="propertyType" required>
+                <option value="">Select property type</option>
+                <option value="House">House</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Commercial">Commercial Property</option>
+                <option value="Land">Land</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="purpose">I am interested in</label>
+            <select id="purpose" required>
+                <option value="">Choose an option</option>
+                <option value="Buying">Buying</option>
+                <option value="Renting">Renting</option>
+                <option value="Selling">Selling</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5"
+                placeholder="Describe the property you need..."
+                required></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">
+            Submit Enquiry
+        </button>
+
+        <p id="formMessage" class="form-message" role="status"></p>
+
+    </form>
+</section>
+
+
+          <h2>Ready to Simplify Your Business?</h2>
+            <p>Discover a smarter way to manage customer enquiries.</p>
+            <a href="#features" class="primary-button">
+                Explore Our Features
+            </a>
+        </section>
+      
+<!-- PROPERTY DETAILS POPUP -->
+<div id="propertyDetailsModal" class="property-modal">
+
+    <div class="property-modal-content">
+
+        <button type="button" class="close-modal"
+        onclick="closePropertyDetails()">&times;</button>
+
+        <h2 id="detailTitle">Property Details</h2>
+
+        <p id="detailLocation"></p>
+
+        <h3 id="detailPrice"></h3>
+
+        <p id="detailDescription"></p>
+
+        <p id="detailBedrooms"></p>
+
+        <a href="#enquiry" class="property-button"
+        onclick="closePropertyDetails()">
+            Enquire About This Property
+        </a>
+
+    </div>
+
+</div>
+    </main>
+
+    <footer>
+        <a href="#" class="logo">
+    <span class="logo-icon">↗</span>
+    <span class="logo-text">
+        FlowPilot<span>AI</span>
+        <small>Capture • Analyze • Grow</small>
+    </span>
+        </a>
+        <p>© 2026 FlowPilot AI. All rights reserved.</p>
+    </footer>
+<script src="script.js?v=2"></script>
+  
+<!-- FLOWPILOT AI FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h2>FlowPilot<span>AI</span></h2>
+            <p>Capture • Analyze • Grow</p>
+            <p>
+                Smarter real estate lead management
+                powered by AI automation.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#properties">Properties</a>
+            <a href="#enquiry">Contact</a>
+          <a href="./privacy.html" target="_blank">Privacy Policy</a>
+
+<a href="./terms.html" target="_blank">Terms & Conditions</a>
+          
+          <a href="privacy.html">TEST PRIVACY PAGE</a>
+        </div>
+
+        <div class="footer-services">
+            <h3>Our Solutions</h3>
+            <p>AI Lead Management</p>
+            <p>Property Enquiry Automation</p>
+            <p>Customer Management</p>
+            <p>Lead Analytics</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 FlowPilot AI. All Rights Reserved.</p>
+        <p>Capture • Analyze • Grow</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
