@@ -1,6 +1,6 @@
  
 // GOOGLE APPS SCRIPT URL
-const scriptURL = "https://script.google.com/macros/s/AKfycbzxYDsA8uyDLvG5qoT19eWlxV6EnrdnLtBVSXd97BvTrzJz3w5M1gFbhkrzS5HsngpPUg/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbx9EcMG8tFsLRj7kDsVBAaLyd7e56UJgvSZLcLrp8uh6AXEiKfWLOXG77FGa2h2Y9l1rA/exec";
 
 const dashboardUrl = scriptURL;
 
