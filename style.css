@@ -1047,3 +1047,52 @@ textarea:focus-visible {
     }
 }
 
+/* FLOWPILOT AI — PREMIUM VISUAL ENHANCEMENTS */
+
+.hero {
+    background:
+        radial-gradient(ellipse at 85% 15%, rgba(124, 58, 237, 0.20), transparent 40%),
+        linear-gradient(135deg, #eaf0ff, #f8faff 55%, #eeeaff);
+}
+
+.hero-content h1 {
+    background: linear-gradient(100deg, #172554, #4338ca, #7c3aed);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-card {
+    border: 1px solid #d9ddff;
+    box-shadow: 0 25px 65px rgba(49, 46, 129, 0.16);
+}
+
+.stat {
+    background: linear-gradient(145deg, #ffffff, #f0f3ff);
+}
+
+.property-card {
+    border: 1px solid #e0e7ff;
+}
+
+.property-card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.15);
+}
+
+.feature-box {
+    background: linear-gradient(145deg, #ffffff, #f7f7ff);
+}
+
+.feature-icon {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(79, 70, 229, 0.2);
+}
+
+.submit-button,
+.primary-button,
+.nav-button {
+    background: linear-gradient(110deg, #2563eb, #6d28d9, #9333ea);
+}
+
