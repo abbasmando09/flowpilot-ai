@@ -1046,4 +1046,6 @@ textarea:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }
-
+.navbar {
+    background: #ff0000 !important;
+}
