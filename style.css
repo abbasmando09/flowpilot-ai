@@ -1095,4 +1095,35 @@ textarea:focus-visible {
 .nav-button {
     background: linear-gradient(110deg, #2563eb, #6d28d9, #9333ea);
 }
+/* PROFESSIONAL DASHBOARD STATS GRID */
 
+.hero-card .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.hero-card .stat {
+    padding: 17px;
+    border: 1px solid #e0e7ff;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #ffffff, #f1f4ff);
+}
+
+.hero-card .stat h2 {
+    margin-top: 6px;
+    color: #4f46e5;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.hero-card .stat p {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hero-card .card-header {
+    margin-bottom: 22px;
+}
